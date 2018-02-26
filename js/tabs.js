@@ -31,6 +31,7 @@ function selectTab(e) {
       link.className = 'side-nav__link';
     }
   });
+  e.preventDefault();
 }
 
 document.querySelectorAll('.side-nav__item').forEach(item => {

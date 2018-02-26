@@ -17,4 +17,5 @@ body {
   color: $color-grey-dark;
   background-image: linear-gradient(to right, $color-red-light, $color-red-dark);
   padding: 8rem 4rem;
+  overflow-y: scroll;
 }
