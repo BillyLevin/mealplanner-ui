@@ -31,6 +31,9 @@ body {
   font-size: 4.5rem;
   text-align: center;
   margin-bottom: 1rem; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-primary {
+      font-size: 3.5rem; } }
 
 .heading-secondary {
   font-weight: 400;
@@ -42,6 +45,9 @@ body {
   font-weight: 300;
   font-size: 4.5rem;
   letter-spacing: -2px; }
+  @media only screen and (max-width: 31.25em) {
+    .heading-logo {
+      font-size: 3.5rem; } }
 
 .heading-form {
   font-size: 2.2rem;
@@ -56,6 +62,9 @@ body {
   margin-bottom: 4rem;
   position: relative;
   text-align: center; }
+  @media only screen and (max-width: 31.25em) {
+    .lead {
+      font-size: 2rem; } }
 
 .btn {
   font-size: 1.8rem;
@@ -85,6 +94,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-evenly; }
+  @media only screen and (max-width: 31.25em) {
+    .features {
+      flex-direction: column; } }
 
 .feature {
   display: flex;
@@ -92,18 +104,29 @@ body {
   justify-content: center;
   align-items: center;
   cursor: pointer; }
+  @media only screen and (max-width: 31.25em) {
+    .feature {
+      margin-bottom: 3rem; } }
   .feature__icon {
     width: 15rem;
     height: 15rem;
     fill: #d80000;
     margin-bottom: 2rem;
     transition: all .2s; }
+    @media only screen and (max-width: 31.25em) {
+      .feature__icon {
+        margin-bottom: 1rem;
+        width: 8rem;
+        height: 8rem; } }
   .feature__text {
     text-align: center;
     font-size: 1.8rem;
     text-transform: uppercase;
     font-weight: 700;
     color: #333; }
+    @media only screen and (max-width: 31.25em) {
+      .feature__text {
+        font-size: 1.5rem; } }
   .feature:hover .feature__icon {
     fill: #a50000; }
 
@@ -178,6 +201,9 @@ body {
   background-color: #efefef;
   flex: 1;
   padding: 2rem; }
+  @media only screen and (max-width: 31.25em) {
+    .main-content {
+      padding: 1rem; } }
 
 .day-view {
   background-color: #fff;
@@ -186,6 +212,9 @@ body {
   padding: 2rem 4rem;
   border: 3px solid #d80000;
   display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .day-view {
+      padding: 2rem; } }
   .day-view__add-meal {
     display: flex;
     margin-bottom: 2rem; }
@@ -252,6 +281,9 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     border-bottom: 2px solid #d80000; }
+    @media only screen and (max-width: 31.25em) {
+      .header__day {
+        font-size: 1.6rem; } }
 
 .meal-view {
   background-color: #fff;
@@ -260,6 +292,9 @@ body {
   padding: 2rem 4rem;
   border: 3px solid #d80000;
   display: none; }
+  @media only screen and (max-width: 56.25em) {
+    .meal-view {
+      padding: 2rem; } }
   .meal-view__ingredients {
     margin-bottom: 2rem; }
   .meal-view__totals {
@@ -343,3 +378,6 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center; }
+  @media only screen and (max-width: 56.25em) {
+    .welcome {
+      padding: 2rem; } }
