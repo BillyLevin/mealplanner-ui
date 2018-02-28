@@ -4,6 +4,12 @@
     margin-bottom: 2rem;
     background-color: $color-red;
     padding: 1rem;
+
+    @media only screen and (max-width: $bp-smallest) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
   }
 
 .total {
@@ -11,5 +17,6 @@
   color: $color-white;
   @media only screen and (max-width: $bp-smallest) {
     font-size: 1.8rem;
+    text-align: center;
   }
 }
