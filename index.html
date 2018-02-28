@@ -19,34 +19,50 @@
     <div class="content">
       <nav class="sidebar">
         <ul class="side-nav">
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Create Meal</a></li>
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Monday</a></li>
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Tuesday</a></li>
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Wednesday</a></li>
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Thursday</a></li>
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Friday</a></li>
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Saturday</a></li>
-          <li class="side-nav__item"><a href="#" class="side-nav__link">Sunday</a></li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Create Meal</a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Monday</a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Tuesday</a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Wednesday</a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Thursday</a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Friday</a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Saturday</a>
+          </li>
+          <li class="side-nav__item">
+            <a href="#" class="side-nav__link">Sunday</a>
+          </li>
         </ul>
       </nav>
       <main class="main-content">
         <div class="welcome">
           <h2 class="heading-primary">Welcome to MealPlanner</h1>
-          <p class="lead">What would you like to do?</p>
-          <div class="features">
-            <div class="feature feature--view">
-              <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-calendar"></use>
-              </svg>
-              <p class="feature__text">View today's meal plan</p>
+            <p class="lead">What would you like to do?</p>
+            <div class="features">
+              <div class="feature feature--view">
+                <svg class="feature__icon">
+                  <use xlink:href="img/sprite.svg#icon-calendar"></use>
+                </svg>
+                <p class="feature__text">View today's meal plan</p>
+              </div>
+              <div class="feature feature--create">
+                <svg class="feature__icon">
+                  <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
+                </svg>
+                <p class="feature__text">Create a new meal</p>
+              </div>
             </div>
-            <div class="feature feature--create">
-              <svg class="feature__icon">
-                <use xlink:href="img/sprite.svg#icon-spoon-knife"></use>
-              </svg>
-              <p class="feature__text">Create a new meal</p>
-            </div>
-          </div>
         </div>
         <div class="meal-view">
           <h2 class="heading-primary">
@@ -68,15 +84,17 @@
                 <label class="add-ingredient__label" for="ingredient">Protein (g)</label>
                 <input type="number" class="add-ingredient__input" placeholder="Protein (g)" id="ingredient-protein">
               </div>
-              <button type="submit" class="btn btn--add">Add Ingredient</button>
+              <button class="btn btn--add add-ingredient-btn">Add Ingredient</button>
             </form>
             <h3 class="heading-secondary">Ingredients</h3>
             <div class="totals">
               <div class="total">
-                Total Calories: <span class="total-meal-calories">1350</span>
+                Total Calories:
+                <span class="total-meal-calories">1350</span>
               </div>
               <div class="total">
-                Total Protein: <span class="total-meal-protein">71g</span>
+                Total Protein:
+                <span class="total-meal-protein">71g</span>
               </div>
             </div>
             <ul class="meal-view__list">
@@ -126,7 +144,7 @@
             <div class="meal-form__field">
               <input type="text" class="meal-form__input" id="meal-name" placeholder="Meal name">
             </div>
-            <button class="btn btn--add">Create Meal</button>
+            <button class="btn btn--add add-meal-btn">Create Meal</button>
           </form>
         </div>
         <div class="day-view">
@@ -146,10 +164,12 @@
           </form>
           <div class="totals">
             <div class="total">
-              Total Calories: <span class="total-day-calories">3200</span>
+              Total Calories:
+              <span class="total-day-calories">3200</span>
             </div>
             <div class="total">
-              Total Protein: <span class="total-day-protein">160g</span>
+              Total Protein:
+              <span class="total-day-protein">160g</span>
             </div>
           </div>
           <div class="day-view__meals">
